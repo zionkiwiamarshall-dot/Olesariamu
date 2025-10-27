@@ -175,23 +175,23 @@ h2{margin-top:0; margin-bottom:0.75rem; font-size:1.4rem; color:var(--accent);}
   text-align: center;
   margin: 40px auto;
 }
+/* ===== Side-to-Side Gallery Slider ===== */
+#gallery {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin: 40px auto;
+}
 
 #gallery .slides {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  transition: transform 0.8s ease-in-out;
+  width: 100%;
 }
 
 #gallery .slides img {
-  max-width: 90%;       /* keeps image responsive */
-  height: auto;         /* keeps natural height */
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
   border-radius: 10px;
-  margin: 10px 0;
-  display: none;        /* hides all except active one */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-#gallery .slides img.active {
-  display: block;       /* show only the active image */
 }
