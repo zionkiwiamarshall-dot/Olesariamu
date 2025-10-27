@@ -119,3 +119,46 @@ h2{margin-top:0; margin-bottom:0.75rem; font-size:1.4rem; color:var(--accent);}
   width: auto;
   border-radius: 5px; /* Optional: soft edges */
 }
+/* ===== Gallery Slider Styling ===== */
+#gallery {
+  text-align: center;
+  padding: 40px 0;
+  background-color: #fafafa;
+}
+
+.slider {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slides img {
+  width: 100%;
+  display: none;
+  border-radius: 10px;
+}
+
+.slides img.active {
+  display: block;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
