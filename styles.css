@@ -162,3 +162,11 @@ h2{margin-top:0; margin-bottom:0.75rem; font-size:1.4rem; color:var(--accent);}
 
 .prev { left: 10px; }
 .next { right: 10px; }
+#gallery .slides img {
+  width: 60%;
+  max-height: 300px;
+  object-fit: cover;
+  margin: 0 auto;
+  display: none;
+  border-radius: 10px;
+}
