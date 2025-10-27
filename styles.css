@@ -170,3 +170,28 @@ h2{margin-top:0; margin-bottom:0.75rem; font-size:1.4rem; color:var(--accent);}
   display: none;
   border-radius: 10px;
 }
+/* ===== Gallery Styling (keep original size) ===== */
+#gallery {
+  text-align: center;
+  margin: 40px auto;
+}
+
+#gallery .slides {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#gallery .slides img {
+  max-width: 90%;       /* keeps image responsive */
+  height: auto;         /* keeps natural height */
+  border-radius: 10px;
+  margin: 10px 0;
+  display: none;        /* hides all except active one */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#gallery .slides img.active {
+  display: block;       /* show only the active image */
+}
