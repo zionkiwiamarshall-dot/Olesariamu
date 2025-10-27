@@ -104,18 +104,19 @@
     </section>
 
     <!-- GALLERY -->
-    <section class="gallery container" id="gallery" aria-labelledby="gallery-heading">
-      <h2 id="gallery-heading">Gallery</h2>
-      <section id="gallery">
-  <div class="gallery">
+   <section id="gallery" class="gallery container" aria-labelledby="gallery-heading">
+  <h2 id="gallery-heading">Gallery</h2>
+
+  <div class="slides">
     <img src="ole inside.jpeg" alt="Ole Interior View">
     <img src="last inside.jpeg" alt="Lounge Area">
     <img src="inside.jpeg" alt="Living Space">
     <img src="another insidde.jpeg" alt="Additional Room">
-  </div> 
-        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-    <button class="next" onclick="moveSlide(1)">&#10095;</button>
   </div>
+
+  <!-- Arrow buttons -->
+  <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+  <button class="next" onclick="moveSlide(1)">&#10095;</button>
 </section>
       <!-- Lightbox -->
       <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Image viewer">
