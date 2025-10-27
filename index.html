@@ -190,39 +190,16 @@
 </body>
 </html>
 <script>
-let slideIndex = 0;
-const slides = document.querySelectorAll('.slides img');
-
-function showSlide(index) {
-  slides.forEach(img => img.classList.remove('active'));
-  slides[index].classList.add('active');
-}
-
-function moveSlide(step) {
-  slideIndex = (slideIndex + step + slides.length) % slides.length;
-  showSlide(slideIndex);
-}
-
-// Auto-play every 5 seconds
-function autoSlide() {
-  moveSlide(1);
-  setTimeout(autoSlide, 5000);
-}
-
-showSlide(slideIndex);
-autoSlide();
-</script>
-<script>
   let currentIndex = 0;
+  const slidesContainer = document.querySelector("#gallery .slides");
   const slides = document.querySelectorAll("#gallery .slides img");
+  const totalSlides = slides.length;
 
   function showNextSlide() {
-    slides[currentIndex].classList.remove("active");
-    currentIndex = (currentIndex + 1) % slides.length;
-    slides[currentIndex].classList.add("active");
+    currentIndex = (currentIndex + 1) % totalSlides;
+    const offset = -currentIndex * 100;
+    slidesContainer.style.transform = translateX(${offset}%);
   }
 
-  // Start the slideshow
-  slides[currentIndex].classList.add("active");
-  setInterval(showNextSlide, 3000); // 3 seconds per slide
+  setInterval(showNextSlide, 3000); // change every 3 seconds
 </script>
