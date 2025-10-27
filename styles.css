@@ -128,7 +128,7 @@ h2{margin-top:0; margin-bottom:0.75rem; font-size:1.4rem; color:var(--accent);}
 
 .slider {
   position: relative;
-  max-width: 800px;
+  max-width: 50px;
   margin: 0 auto;
   overflow: hidden;
   border-radius: 10px;
@@ -151,9 +151,9 @@ h2{margin-top:0; margin-bottom:0.75rem; font-size:1.4rem; color:var(--accent);}
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
-  padding: 12px;
+  padding: 9px;
   cursor: pointer;
-  border-radius: 50%;
+  border-radius: 9%;
 }
 
 .prev:hover, .next:hover {
